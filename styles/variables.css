@@ -3,6 +3,8 @@
     --main--text: 'Inter', 'sens-serif';
     --alt--text: 'PressStart2P', 'sens-serif';
     --Themes-mainColor: rgba(0, 0, 0, 1);
+    --Themes-altColor: rgba(255, 255, 255, 1);
+
     --main--font--wdth: 410;
     --alt--font-wdth: 715;
     --page-gradient:   repeating-linear-gradient(
