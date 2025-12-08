@@ -1,1 +1,34 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+:root {
+    --main--text: 'Inter', 'sens-serif';
+    --alt--text: 'PressStart2P', 'sens-serif';
+    --Themes-mainColor: rgba(0, 0, 0, 1);
+    --main--font--wdth: 410;
+    --alt--font-wdth: 715;
+    --page-gradient:   repeating-linear-gradient(
+      to right,
+      #d3d3d3 0px,
+      #d3d3d3 1px,
+      transparent 1px,
+      transparent 2px
+    ),
+    
+    repeating-linear-gradient(
+      to bottom,
+      #d3d3d3 0px,
+      #d3d3d3 1px,
+      transparent 1px,
+      transparent 2px
+    ),
+    
+    linear-gradient(
+      180deg,
+      #e7e7e7 0%,
+      #e7e7e7 0.01%,     
+      #1a1a1a 100%
+    );
+
+    --padding-text: 25px;
+    --text-size: 18px;
+    --width--size: clamp(375px, 260.56px + 30.52vw, 700px);
+}

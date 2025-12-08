@@ -4,6 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Закрывающий тег</title>
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+    <link rel="icon" type="image/svg+xml" href="./images/favicon.svg">
+    <link rel="apple-touch-icon" sizes="180x180" href="./images/mobile-icon.png">
     <link rel="stylesheet" href="./fonts/fonts.css" />
     <link rel="stylesheet" href="./styles/variables.css" />
     <link rel="stylesheet" href="./styles/globals.css" />
@@ -11,8 +14,55 @@
     <link rel="stylesheet" href="./styles/animations.css" />
   </head>
   <body class="page">
-    <header class="header"></header>
-    <main></main>
+    <header class="header">
+      <h1 class="main--title">&lt;/Html&gt;</h1>
+      <h2 class="alt--title">Закрывающий тeг</h2>
+    </header>
+    <main>
+      <section class="content__section">
+        <ul class="content">
+          <li>
+            <article class="article__block">
+              <h3 class="article__name">Фритрек и нулевой спринт: Подготовка к работе</h3>
+              <img class="background__image blur__effect" src="./images/car.jpg">
+              <div class="text__description">
+                <p>Это было самое начало пути. На этом этапе важно было проникнуться основами и настроиться на учёбу. И, возможно, подумать, как новые знания могут повлиять на ваше будущее.</p>
+                <p>Место для ваших воспоминаний о начале обучения.</p>
+              </div>
+
+              <div class="like__section">
+                <button class="card__icon-button is-liked" aria-label="Like this article">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="like-icon">
+                    <path d="M5 12h14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                  </svg>
+                </button>
+
+                <button class="card__like-button" type="button">
+                  <span class="button__text">Like</span>
+                </button>
+              </div>
+            </article>
+          </li>
+        </ul>
+      </section>
+      <section class="save__section">
+        <button class="save__button" onclick="document.getElementById('save__dialog__id').showModal()">
+          <svg class="floppy" viewBox="0 0 39 39">
+            <use href="./svg/floppy.svg#floppy"/>
+          </svg>
+          <span class="button__text">Сохранить на память</span>
+        </button>
+      </section>
+    </main>
+      <dialog class="save__dialog" id="save__dialog__id">
+          <svg class="floppy__modal" viewBox="0 0 39 39">
+            <use href="./svg/floppy.svg#floppy"/>
+          </svg>
+          <p class="save__dialog__text">Вставьте дискету, чтобы продолжить></p>
+          <button class="modal__button">
+            <span class="button__text" onclick="this.closest('dialog').close()">Ok</span>
+          </button>
+      </dialog>
     <script src="./scripts/like.js"></script>
   </body>
 </html>

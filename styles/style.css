@@ -1,8 +1,8 @@
 /* Здесь вы напишете основную часть стилей страницы.
 
 Будьте внимательны! Для корректной работы скриптов на этом сайте нужно, чтобы в HTML некоторые классы были названы особым образом:
-✦ like-icon — для svg-иконки анимированного сердца
-✦ card__like-button — для кнопки Like рядом с иконкой
+✦ like-icon — для svg-иконки анимированного сердца + 
+✦ card__like-button — для кнопки Like рядом с иконкой + 
 ✦ card__icon-button — для кнопки, оборачивающей иконку
 ✦ card__icon-button — для кнопки, оборачивающей иконку
 ✦ is-liked — для обозначения состояния лайкнутой иконки в виде сердца
@@ -13,4 +13,86 @@
 .page {
   min-inline-size: 320px;
   min-block-size: 100dvb;
+  font-family: var(--main--text);
+  background: var(--page-gradient);
+  background-attachment: fixed;
+  background-size: cover; 
+  display: grid;
+  gap: 100px;
+  justify-content: center;
+  font-variation-settings: var(--main--font--wdth);
+}
+
+.header {
+  background-color: rgba(255, 255, 255, 1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-self: center;
+  text-align: center;
+  font-family: var(--alt--text);
+  border: 2px solid var(--Themes-mainColor, rgba(0, 0, 0, 1));
+  text-transform: uppercase;
+  inline-size: var(--width--size);
+  min-block-size: 327px;
+  margin-block-start: 100px;
+
+}
+
+.main--title {
+    font-size: clamp(18px, 4vw, 48px);
+  letter-spacing: clamp(1px, 0.5vw, 4px);
+
+  }
+
+.alt--title {
+  font-size: clamp(0.875rem, 0.226rem + 2.7692vw, 1.4375rem);
+     font-family: var(--alt--text);
+}
+
+.background__image {
+  inline-size: 100%;
+}
+
+.content {
+  display: grid;
+  gap: 50px;
+  inline-size: var(--width--size);
+}
+
+.article__block {
+  background-color:  rgba(255, 255, 255, 1);
+  border: 2px solid var(--Themes-mainColor, rgba(0, 0, 0, 1));
+}
+
+.article__name {
+  font-variation-settings: var(--alt--font-wdth);
+}
+
+.text__description {
+  font-size: var(--text-size);
+  font-variation-settings: var(--main--font--wdth);
+  padding-inline-start: var(--padding-text);
+  padding-inline-end: var(--padding-text);
+  padding-block-start: var(--padding-text);
+  padding-block-end: var(--padding-text);
+}
+
+.floppy {
+  color: black;
+  inline-size: 28px;
+  block-size: 28px;
+}
+
+.save__dialog {
+  display: none;
+}
+
+.save__dialog[open] {
+  display: flex;
+  flex-direction: row;
+}
+
+.save__dialog::backdrop {
+  background: rgba(0, 0, 0, 0.75);
 }
