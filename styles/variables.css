@@ -33,4 +33,8 @@
     --padding-text: 25px;
     --text-size: 18px;
     --width--size: clamp(375px, 260.56px + 30.52vw, 700px);
+
+    --like-icon-color: var(--Themes-mainColor);
+    --like-heart-color: red;
+    --label-stroke-color: #ffffff;
 }
