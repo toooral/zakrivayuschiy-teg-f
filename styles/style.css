@@ -36,7 +36,6 @@
   inline-size: var(--width--size);
   min-block-size: 327px;
   margin-block-start: 100px;
-
 }
 
 .main--title {
@@ -44,7 +43,7 @@
   }
 
 .alt--title {
-  font-size: clamp(18px, 2.5vw, 23px);
+  font-size: 14px;
   font-family: var(--alt--text);
   padding-block-start: 20px;
 }
@@ -58,6 +57,34 @@
   filter: saturate(99%);
 }
 
+.filter__hue {
+  filter: hue-rotate(99deg);
+}
+
+.filter__grayscale {
+  filter: grayscale(313%);
+}
+
+.filter__sepia {
+  filter: sepia(66%);
+}
+
+.filter__contrast {
+  filter: contrast(666%);
+}
+
+.filter__brightness {
+  filter: brightness(399%);
+}
+
+.filter__opacity {
+  opacity: 66%;
+}
+
+.filter__mix {
+  filter: brightness(33%), contrast(33%), sepia(33%), grayscale(33%), hue-rotate(33gef), saturate(33%);
+}
+
 .image__block { 
   position: relative;
   display: inline-block;
@@ -65,8 +92,8 @@
 
 .image__label {
   position: absolute;
-  top: 25px;
-  right: 25px;
+  top: 28px;
+  right: 26px;
   font-family: var(--alt--text);
   font-size: 14px;
   color: var(--Themes-mainColor);
@@ -90,8 +117,9 @@
 
 .content {
   display: grid;
-  gap: 50px;
+  gap: 49px;
   inline-size: var(--width--size);
+  list-style: none;
 }
 
 .article__block {
@@ -127,11 +155,10 @@
   display: flex;
   flex-direction: row;
   justify-content: end;
-
   align-items: center;
   padding-inline-end: var(--padding-text);
   padding-block-end: var(--padding-text);
-  gap: 5px;
+  gap: 1px;
 }
 
 
@@ -229,8 +256,8 @@
   flex-direction: column;
   justify-content: center;
   gap: 30px;
-  padding: 30px 40px;
-  inline-size: clamp(21.3125rem, -259.9375rem + 1200vw, 22.0625rem);
+  padding: 30px 35px;
+  inline-size: clamp(341px, -4159.00px + 1200.00vw, 353px);
 }
 
 .dialog__info {
@@ -264,8 +291,8 @@
 }
 
 .floppy__modal {
-  inline-size: 28px;
-  block-size: 28px;
+  inline-size: 39px;
+  block-size: 39px;
   align-self: center;
 }
 
@@ -359,8 +386,29 @@
   padding: 30px 30px;
 }
 
+.header {
+  min-block-size: 368px;
+}
+
+.main--title {
+  padding-block-start: ;
+  }
+
+.alt--title {
+  font-size: clamp(18px, 2.5vw, 23px);
+}
+
+.content {
+  gap: 55px;
+}
+
+
+.info__block {
+  gap: 21px;
+}
+
 .modal__button {
-  inline-size: 280px;
+  inline-size: 287px;
 }
 
 .save__button {
@@ -369,11 +417,7 @@
   block-size: 55px;
 }
 
-.floppy__modal {
-  inline-size: 39px;
-  block-size: 39px;
-  align-self: center;
+.save__section { 
+  padding-block-start: 52px;
 }
-
-
 }
