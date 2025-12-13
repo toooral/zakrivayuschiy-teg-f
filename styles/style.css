@@ -50,7 +50,6 @@
 
 .background__image {
   inline-size: 100%;
-  position: relative;
 }
 
 .filter__saturate {
@@ -82,7 +81,7 @@
 }
 
 .filter__mix {
-  filter: brightness(33%), contrast(33%), sepia(33%), grayscale(33%), hue-rotate(33gef), saturate(33%);
+  filter: brightness(33%), contrast(33%), sepia(33%), grayscale(33%), hue-rotate(33deg), saturate(33%);
 }
 
 .image__block { 
@@ -298,6 +297,7 @@
 
 .button__style {
   transition: box-shadow 0.3s ease;
+  cursor: pointer;
 }
 
 .button__style:focus {
@@ -306,10 +306,6 @@
 
 .button__style:focus-visible {
   box-shadow: 2px 2px 0 0 var(--Themes-mainColor);
-}
-
-.button__style {
-  cursor: pointer;
 }
 
 .card__icon-button:hover .main-body,
@@ -389,10 +385,6 @@
 .header {
   min-block-size: 368px;
 }
-
-.main--title {
-  padding-block-start: ;
-  }
 
 .alt--title {
   font-size: clamp(18px, 2.5vw, 23px);
