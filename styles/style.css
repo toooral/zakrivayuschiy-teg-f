@@ -69,15 +69,15 @@
 }
 
 .filter__contrast {
-  filter: contrast(666%);
+  filter: contrast(66%);
 }
 
 .filter__brightness {
-  filter: brightness(399%);
+  filter: brightness(99%);
 }
 
 .filter__opacity {
-  opacity: 66%;
+  filter: opacity(33%);
 }
 
 .filter__mix {
