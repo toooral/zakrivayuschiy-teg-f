@@ -1,7 +1,7 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
 :root {
     --main--text: 'Inter', Arial, Helvetica, sans-serif;
-    --alt--text: 'PressStart2P', 'Courier New', Courier, sans-serif;
+    --alt--text: 'PressStart2P', 'fantasy', Courier, sans-serif;
     --Themes-mainColor: rgba(0, 0, 0, 1);
     --Themes-altColor: rgba(255, 255, 255, 1);
 
