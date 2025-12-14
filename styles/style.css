@@ -354,8 +354,17 @@
   fill: var(--accent-color);
 }
 
+.card__icon-button:active .main-body {
+  fill: var(--color-body-heart);
+  transition: fill .3s linear .05s; 
+}
 
-/* Клика-лайк */
+.card__icon-button:active .core { 
+  fill: var(--color-body-heart);
+  transition: fill .3s linear; 
+}
+
+/* Клик-лайк */
 .like-icon.is-liked .main-body {
   fill: var(--color-body-heart);
   transition: fill .3s linear .05s; 
