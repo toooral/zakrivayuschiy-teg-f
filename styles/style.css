@@ -166,10 +166,11 @@
 .card__icon-button {
   background: none;
   border: none;
-  transition: outline 0.3s ease;
   align-self: center;
   display: flex;
   justify-content: center;
+  border: 2px solid transparent;
+  transition: border-color 0.3s ease;
 }
 
 .card__like-button {
@@ -217,6 +218,16 @@
 .button--animated {
   position: relative;
   overflow: hidden;
+  border: 2px solid var(--Themes-mainColor);
+  transition: box-shadow 0.3s ease;
+}
+
+.button--animated:focus {
+  outline: none;
+}
+
+.button--animated:focus-visible {
+  border-color: var(--Themes-mainColor);
 }
 
 .button--animated::before {
@@ -299,7 +310,7 @@
 }
 
 .button__style {
-  transition: box-shadow 0.3s ease;
+
   cursor: pointer;
   padding: 0;
 }
@@ -323,7 +334,8 @@
 }
 
 .card__icon-button:focus-visible {
-  outline: 2px solid var(--Themes-mainColor);
+  border-color: var(--Themes-mainColor);
+  box-shadow: 0 0 0 0 transparent;
 }
 
 .card__icon-button:hover {
@@ -411,9 +423,8 @@
     gap: 55px;
   }
 
-
   .info__block {
-    gap: 21px;
+    gap: 20.8px;
   }
 
   .modal__button {
@@ -427,6 +438,6 @@
   }
 
   .save__section { 
-    padding-block-start: 52px;
+    padding-block-start: 49.5px;
   }
 }
